@@ -1,3 +1,7 @@
+html{
+  background-color: black;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -6,9 +10,36 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+#root{ 
+  /* display: none; */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+#particles-js{
+  /* height: 25vh; */
+  zoom: 0.75;
+  width: 125%;
+  margin-top: -7.25vh;
+  margin-left: -12.5%;
+}
+
+
+#part-container{
+  /* width: 125vw; */
+
+  /* margin-top: -7.25vh; */
+  /* margin-left: -12.5vw; */
+  height:100vh;
+  z-index: -1;
+  box-sizing: border-box;
+  position: absolute;
+}
+
+
