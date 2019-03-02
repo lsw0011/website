@@ -1,0 +1,92 @@
+.skills{
+    background-color: #111111;
+    display: grid;
+    grid-template-areas: "header header header"
+                         "languages webdev frameworks";
+    grid-template-columns: 25% 50% 25%; 
+    grid-template-rows: auto auto;
+    /* grid-column-gap: 1.5rem; */
+    text-align: center;
+    /* height: 90vh */
+    box-sizing: border-box;
+    padding: 5.5rem 0;
+  }
+  
+  
+  .skills-header{
+    grid-area: header;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #777777;
+  }
+  
+  .skills-header span{
+    color: red;
+  }
+  
+  
+  .skills p{
+    width: 100%;
+    color: #ffffff;
+  }
+  
+  .skills-languages{
+    grid-area: languages;
+    display: grid;
+    grid-template-areas: "header header";
+    grid-template-columns: repeat(2, calc(50%-1rem));
+    grid-template-rows: 4rem 3rem 3rem;
+    margin: 1rem;
+    gap: 1rem;
+  }
+  
+  .skills div div{
+    background-color: #181818;
+    height: 3rem;
+  }
+  
+  .skills-languages-header{
+    grid-area: header;
+    background-color: #181818;
+    height: 4rem;
+    line-height: 4rem;
+    margin-bottom: 0rem;
+    margin-top: 0;
+  }
+  
+  .skills-webdev{
+    grid-area: webdev;
+    display: grid;
+    grid-template-areas: "header header header";
+    grid-template-rows: auto auto;
+    grid-template-columns: repeat(3, calc(33%-.33rem));  
+    gap: 1rem;
+    margin: 1rem;
+  }
+  
+  .skills-webdev-header{
+    grid-area: header;
+    margin: 0;
+    height: 4rem;
+    line-height: 4rem;
+    background-color: #181818
+  }
+
+  .skills-frameworks{
+    grid-area: frameworks;
+    display: grid;
+    grid-template-areas: 'header';
+    grid-template-rows: auto auto auto;
+    gap: 1rem;
+    padding: 1rem;
+    /* background-color: blue; */
+  }
+
+  .skills-frameworks-header{
+    grid-area: header;
+    margin: 0;
+    height: 4rem;
+    line-height: 4rem;
+    background-color: #181818;
+    /* padding: 1rem; */
+  }

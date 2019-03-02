@@ -1,0 +1,51 @@
+.summary{
+    width:100vw;
+    height:auto;
+    margin-top: -91.4vh;
+    background-color: white;
+    display: grid;
+    grid-template-areas: "header"
+                         "body";
+    text-align: center;
+    font-family: 'Lato';
+    background-color: white;
+  }
+  
+  
+  
+  
+  .summary-header{
+    width: 100vw;
+    line-height: 10vh;
+    font-size: 2.8rem;
+    letter-spacing: .2rem;
+    font-weight: 300;
+    margin-top: 18vh;
+    margin-bottom: 3vh;
+  }
+  
+  .summary-header-line{
+    width: 5%;
+    margin-bottom: 10vh;
+    border-color: red;
+    border-bottom: none;
+  }
+  
+  .summary-paragraph{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+  }
+  
+  .summary-paragraph-text{
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: #888888;
+    width: 60vw;
+    text-align: center;
+  }
+  
+  .summary-header span{
+    color: red;
+  }
+  

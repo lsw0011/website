@@ -1,0 +1,23 @@
+.projects{
+    display: grid;
+    grid-template-areas: 'header header header';
+    grid-template-columns: 33%;
+} 
+
+.projects-header{
+    margin: 3rem 0;
+    grid-area: header;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.project-item{
+    text-align: center;
+    height: 33vw;
+    border: 1px solid #DDDDDD;
+}
+
+.project-image{
+    width: 80%;
+}
