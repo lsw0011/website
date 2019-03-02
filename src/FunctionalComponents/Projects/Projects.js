@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 import TwoGame from '../../StateComponents/TwoGame/TwoGame';
-import Sudoku from '../../StateComponents/Sudoku/Sudoku';
 import './Projects.css';
 import thumbnail from '../../images/2048.jpg'
 import Modal from '../../UI/Modal';

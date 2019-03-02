@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Hoc from './Hoc';
+import Hoc from './hoc';
 
 import Skills from './FunctionalComponents/Skills/Skills';
 import Summary from './FunctionalComponents/Summary/Summary';

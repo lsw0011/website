@@ -1,0 +1,213 @@
+
+.twogame-container{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    width:auto;
+    z-index: 20;
+    position: fixed;
+    left: 50%;
+    top: 0;
+    margin-left: -15.75rem;
+    margin-top: 7.5vh;
+}
+
+.twogame{
+    background-color: #776e65;
+    box-sizing: border-box;
+    border: 1px solid black;
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 7.5rem);
+    grid-template-rows: repeat(4, 7.5rem);
+    column-gap: 0.75rem;
+    row-gap: 0.75rem;
+    padding: 0.75rem;
+    border-radius: 5px;
+}
+
+.pop{
+    animation: pop 0.15s;
+}
+
+.phase-in{
+    animation: phase-in 0.1s;
+}
+
+.cell{
+    z-index: 3;
+    position: absolute;
+    height:7.5rem;
+    width:7.5rem;
+    background-color: rgb(255, 100, 100);
+    font-size: 3rem;
+    transition: transform 0.2s ;
+    border-radius: 3px;
+    line-height: 3rem;
+    text-align: center;
+}
+
+.disappear{
+    animation: appear 0.2s;
+}
+
+.cell-move{
+    transition: transform 0.2s;
+}
+
+.moving{
+    z-index: 3;
+}
+
+.cell-background{
+    z-index: 2;
+    position:absolute;
+    background-color: #bbada0;
+    border-radius: 3px;
+    height: 7.5rem;
+    width: 7.5rem;
+}
+
+.gameNumber{
+    line-height: 7.5rem;
+    margin: 0;
+}
+
+.empty{
+    z-index: 0;
+    position:absolute;
+    background-color: #bbada0;
+    border-radius: 3px;
+    height: 7.5rem;
+    width: 7.5rem;
+}
+
+.move-animation{
+    animation: move 0.3s;
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(0)
+    }
+    50% {
+        transform: translateY(8.75rem);
+        opacity: 0;
+    }
+    100%{
+        
+    }
+}
+
+.one{
+    background-color: #ffffff;
+    color: black
+}
+
+.two{
+    background-color: #e8e8e8;
+    color: black;
+}
+
+.three{
+    background-color: #d0d0d0;
+    color: black;
+}
+
+.four{
+    background-color: #b8b8b8;
+    color: black;
+}
+
+.five{
+    background-color: #a0a0a0;
+    color: black;
+}
+
+.six{
+    background-color: #989898;
+    color: black;
+}
+
+.seven{
+    background-color: #808080;
+    color: black;
+}
+
+.eight{
+    background-color: #686868;
+    color: white;
+}
+
+.nine{
+    background-color: #505050;
+    color: white;
+
+}
+
+.ten{
+    background-color: #383838;
+    color: white;
+}
+
+.eleven{
+    background-color: #262626;
+    color: white;
+}
+
+.twelve{
+    background-color: #131313;
+    color: white;
+}
+
+.thirteen{
+    background-color: #000000;
+    color: white;
+}
+
+
+
+@keyframes pop {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+@keyframes phase-in {
+    0% {
+        transform: scale(0.5);
+        opacity: 0.3;
+    } 
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes appear{
+    0% {
+        opacity: 0;
+    }
+    99.9%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes disappear{
+    0% {
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}

@@ -1,0 +1,36 @@
+.Cell{
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px black solid;
+    line-height: 2rem;
+}
+
+
+.Grid{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(3, 2rem);
+    grid-template-rows: repeat(3, 2rem);
+    border: 1.5px solid black
+}
+
+.Board{
+    font-weight: 6  00;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(3, 6.1rem);
+    grid-template-rows: repeat(3, 6.1rem); 
+    margin: 2rem;
+    background-color: white;
+}
+
+.Sudoku{
+    position: fixed;
+    height: 22.3rem;
+    width: 22.3rem;
+    left: 50%;
+    top: 0;
+    margin-left: -11.15rem;
+    z-index: 20;
+
+}
