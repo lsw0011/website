@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import FixedHeader from './FunctionalComponents/FixedHeader'
+import FixedHeader from './FunctionalComponents/FixedHeader/FixedHeader'
 import Hoc from './hoc';
 import './App.css';
 
