@@ -29,17 +29,18 @@
     <div id="part-container" data-relative-input="true">
       <div id="particles-js" data-depth='0.8'></div>
     </div>
+    <script src = "https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script>
+      particlesJS.load('particles-js', 'particles.json', () => {
+          console.log('particles.json loaded...');
+      })
+      var scene = document.getElementById('scene');
+      var particles = document.getElementById('part-container');
+      var particlesParallax = new Parallax(particles)
+      var parallaxInstance = new Parallax(scene);
+    </script>
     <div id="root"></div>
   </body>
-  <script src = "https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-  <script>
-    particlesJS.load('particles-js', 'particles.json', () => {
-        console.log('particles.json loaded...');
-    })
-    var scene = document.getElementById('scene');
-    var particles = document.getElementById('part-container');
-    var particlesParallax = new Parallax(particles)
-    var parallaxInstance = new Parallax(scene);
-  </script>
+ 
 </html>
