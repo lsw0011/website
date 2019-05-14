@@ -1,5 +1,6 @@
 .projects{
     display: grid;
+    height: 100vh;
     grid-template-areas: 'header header header';
     grid-template-columns: 33%;
 } 
